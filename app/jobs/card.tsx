@@ -15,7 +15,7 @@ type Card = {
     desc:string
 }
 
-export default function Card({title,id,companyName,location,salary,type,desc}:Card) {
+export default function Card({title,id,companyName,location,type,desc}:Card) {
     const router =useRouter();
 
   return (
