@@ -45,7 +45,7 @@ export function DropDown({value,setValue,jobType}:Props) {
         {value ? (
           jobType.find((framework) => framework.value === value)?.label
         ) : (
-          <span className="opacity-50">All type jobs</span>
+          <span className="opacity-50">All Institutions</span>
         )}
         <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>

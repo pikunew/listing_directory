@@ -18,12 +18,12 @@ const initialState = {
 
     const jobType = [
         {
-          value:'Full-Time',
-          label:'Full-Time'
+          value:'Govt-Institutions',
+          label:'Govt-Institutions'
         },
         {
-          value:'Part-Time',
-          label:'Part-Time'
+          value:'Private-institutions',
+          label:'Private-institutions'
         },
       ]
     
@@ -52,9 +52,9 @@ export default function CreateJobClient() {
         }} className='container mx-auto grid gap-8 grid-cols-4'>
         <InputWithLabel
             type='text'
-            id='title'
-            placeholder='title'
-            label='title'
+            id='Number'
+            placeholder='Number'
+            label='Number'
             value={state.title}
             onChange={onChange}
             name='title'
@@ -65,8 +65,8 @@ export default function CreateJobClient() {
             type='text'
             value={state.companyName}
             id='companyName'
-            placeholder='companyName'
-            label='companyName'
+            placeholder='Institution Name'
+            label='Institution Name'
             name='companyName'
             onChange={onChange}
 

@@ -9,7 +9,7 @@ export default async function page() {
 
   return (
     <div>
-        <h1 className='text-[3rem] container py-4'>Job Listing</h1>
+        <h1 className='text-[3rem] container py-4'>Helpline Numbers</h1>
 
         <div>
             <ClientJob jobs={jobs}/>

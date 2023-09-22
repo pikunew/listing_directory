@@ -11,7 +11,6 @@ type Card = {
     title:string,
     companyName:string,
     location:string,
-    salary:string,
     type:string,
     desc:string
 }
@@ -30,7 +29,6 @@ export default function Card({title,id,companyName,location,salary,type,desc}:Ca
         </div>
 
         <div className="my-5 flex items-center gap-5">
-             <span className=" rounded-2xl bg-neutral-500 p-2">$ {salary}</span>
             <span className=" rounded-2xl bg-neutral-500 p-2 px-4">{type}</span>
         </div>
 
@@ -38,13 +36,13 @@ export default function Card({title,id,companyName,location,salary,type,desc}:Ca
         <p className="text-lg">{desc}</p>
 
         <div className="pt-6 ml-auto mr-2 flex gap-4">
-            <form action={async(formData) => {
+            {/* <form action={async(formData) => {
                 await deleteJob(formData)
                 toast.success('Job deleted successfully!')
             }}>
                 <input type="hidden" name="jobId" value={id} id="jobId"/>
                 <SubmitButton label="Delete"/>
-            </form>
+            </form> */}
             <Button onClick={() => router.push(`/jobs/${id}`)}>View More</Button>
         </div>
 
